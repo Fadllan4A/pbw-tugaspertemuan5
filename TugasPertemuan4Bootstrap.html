@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Menarik dengan Bootstrap</title>
+    <!-- Link ke CSS Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f5f5;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x400/?nature');
+            background-size: cover;
+            color: black;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Brand Anda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Selamat Datang di Halaman Kami</h1>
+        <p>Temukan keindahan alam dan informasi menarik di sini.</p>
+        <a href="#konten" class="btn btn-primary btn-lg">Jelajahi Sekarang</a>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="container mt-5" id="konten">
+        <h2 class="text-center">Artikel Terbaru</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://th.bing.com/th/id/R.2ec7c89f2a0f1a67ddb93cf45531aa09?rik=41mwJKNWQ1udZw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-2fkgtMFoDXo%2fU1TJshsDOTI%2fAAAAAAAAAYo%2f3RcvxwMZZEQ%2fs1600%2fhutan.jpg&ehk=XsNgEeQhkSMFWBQoty6N%2bXespxmYWMxU0KvzbY1v9Ss%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Hutan">
+                    <div class="card-body">
+                        <h5 class="card-title">Keindahan Hutan</h5>
+                        <p class="card-text">Hutan adalah rumah bagi berbagai spesies flora dan fauna. Mari kita jaga kelestariannya.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://th.bing.com/th/id/OSK.HEROGQJ0-iwYbZ59ygwM_iRYotYqL_XVPKCjLuPTOWqWO64?rs=1&pid=ImgDetMain" class="card-img-top" alt="Gunung">
+                    <div class="card-body">
+                        <h5 class="card-title">Pesona Gunung</h5>
+                        <p class="card-text">Gunung menawarkan pemandangan yang menakjubkan dan tantangan bagi para pendaki.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://www.suzukicdn.com/uploads/news/123712475_s_(1).webp" class="card-img-top" alt="Laut">
+                    <div class="card-body">
+                        <h5 class="card-title">Keindahan Laut</h5>
+                        <p class="card-text">Laut menyimpan keindahan yang luar biasa dan kehidupan bawah laut yang menakjubkan.</p>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Kontak -->
+        <h2 class="text-center mt-5">Hubungi kontak kami, 081573064239</

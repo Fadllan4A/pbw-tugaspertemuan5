@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h2>Kalkulator</h2>
+    <label for="operator">Operator:</label>
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value=""></option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <br><br>
+    <label for="numbers">Masukkan angka (pisahkan dengan koma):</label>
+    <input type="text" id="numbers" placeholder="Contoh: 5,10,15">
+    <button onclick="calculate()">Hitung</button>
+    <p id="calculatorResult"></p>
+
+    <script>
+        // Kalkulator menggunakan arrow function dan spread operator
+        const calculator = (operator, ...numbers) => {
+            switch (operator) {
+                case '+': return numbers.reduce((a, b) => a + b, 0);
+                case '-': return numbers.reduce((a, b) => a - b);
+                case '*': return numbers.reduce((a, b) => a * b, 1);
+                case '/': return numbers.reduce((a, b) => a / b);
+                case '%': return numbers.reduce((a, b) => a % b);
+                default: return 'Operator tidak valid';
+            }
+        };
+
+        function calculate() {
+            let operator = document.getElementById("operator").value;
+            let numbers = document.getElementById("numbers").value.split(",").map(Number);
+            let result = calculator(operator, ...numbers);
+            document.getElementById("calculatorResult").innerText = "Hasil: " + result;
+        }
+    </script>
+</body>
+</html>
